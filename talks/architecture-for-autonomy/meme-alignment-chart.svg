@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1060 690" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <!-- Tenancy alignment chart. The room is lawful good; this talk is chaotic good. -->
+  <defs>
+    <g id="cell"><rect width="322" height="196" rx="8" fill="#fdfdfb" stroke="#2b2b33" stroke-width="1.5"/></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#55555c"/>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="36" y1="26" x2="36" y2="596" stroke="#55555c" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <text x="36" y="0" transform="rotate(-90 36 0) translate(-110 20)" text-anchor="middle" font-size="22" font-weight="800" fill="#3d8b40" letter-spacing="3">GOOD</text>
+  <text x="36" y="0" transform="rotate(-90 36 0) translate(-512 20)" text-anchor="middle" font-size="22" font-weight="800" fill="#b03434" letter-spacing="3">EVIL</text>
+  <line x1="76" y1="650" x2="1044" y2="650" stroke="#55555c" stroke-width="3" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <text x="170" y="682" text-anchor="middle" font-size="22" font-weight="800" fill="#55555c" letter-spacing="3">LAWFUL</text>
+  <text x="944" y="682" text-anchor="middle" font-size="22" font-weight="800" fill="#55555c" letter-spacing="3">CHAOTIC</text>
+
+  <!-- row 1 -->
+  <g transform="translate(70,10)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#3d8b40" letter-spacing="2">LAWFUL GOOD</text>
+    <g font-size="20" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="90">Namespace per service,</text>
+      <text x="161" y="119">OPA, quotas, NetworkPolicy,</text>
+      <text x="161" y="148">a cluster per environment</text>
+    </g>
+  </g>
+  <g transform="translate(399,10)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#3d8b40" letter-spacing="2">NEUTRAL GOOD</text>
+    <text x="161" y="115" text-anchor="middle" font-size="21" font-weight="700" fill="#2b2b33">A cluster per team</text>
+  </g>
+  <g transform="translate(728,10)">
+    <rect width="322" height="196" rx="8" fill="#fdf0dd" stroke="#de7f11" stroke-width="3"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#3d8b40" letter-spacing="2">CHAOTIC GOOD</text>
+    <g font-size="21" font-weight="700" fill="#a35c00" text-anchor="middle">
+      <text x="161" y="86">An AWS account</text>
+      <text x="161" y="114">per service</text>
+      <text x="161" y="146">+ serverless</text>
+    </g>
+    <g transform="translate(262,178) rotate(-8)">
+      <rect x="-48" y="-15" width="96" height="30" rx="15" fill="#ed9122"/>
+      <text x="0" y="6" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">this talk</text>
+    </g>
+  </g>
+
+  <!-- row 2 -->
+  <g transform="translate(70,213)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#77777a" letter-spacing="2">LAWFUL NEUTRAL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">Every DNS record</text>
+      <text x="161" y="130">needs a meeting</text>
+    </g>
+  </g>
+  <g transform="translate(399,213)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#77777a" letter-spacing="2">TRUE NEUTRAL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">Whatever the last</text>
+      <text x="161" y="130">consultant left behind</text>
+    </g>
+  </g>
+  <g transform="translate(728,213)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#77777a" letter-spacing="2">CHAOTIC NEUTRAL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">ClickOps, documented</text>
+      <text x="161" y="130">in screenshots</text>
+    </g>
+  </g>
+
+  <!-- row 3 -->
+  <g transform="translate(70,416)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#b03434" letter-spacing="2">LAWFUL EVIL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">ResourceQuotas</text>
+      <text x="161" y="130">set by finance</text>
+    </g>
+  </g>
+  <g transform="translate(399,416)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#b03434" letter-spacing="2">NEUTRAL EVIL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">Everything in</text>
+      <text x="161" y="130">namespace <tspan font-family="ui-monospace, 'Cascadia Code', Menlo, monospace" fill="#e01e5a">default</tspan></text>
+    </g>
+  </g>
+  <g transform="translate(728,416)">
+    <use href="#cell"/>
+    <text x="161" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#b03434" letter-spacing="2">CHAOTIC EVIL</text>
+    <g font-size="21" font-weight="700" fill="#2b2b33" text-anchor="middle">
+      <text x="161" y="100">The admin kubeconfig</text>
+      <text x="161" y="130">is pinned in #general</text>
+    </g>
+  </g>
+</svg>

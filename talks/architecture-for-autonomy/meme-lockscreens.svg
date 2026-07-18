@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1000 655" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <!-- Same 3:12 AM, two on-call worlds. -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c2340"/>
+      <stop offset="100%" stop-color="#4a3b6b"/>
+    </linearGradient>
+    <clipPath id="phoneL"><rect x="140" y="14" width="300" height="586" rx="40"/></clipPath>
+    <clipPath id="phoneR"><rect x="560" y="14" width="300" height="586" rx="40"/></clipPath>
+  </defs>
+
+  <!-- LEFT PHONE: shared cluster -->
+  <g clip-path="url(#phoneL)">
+    <rect x="140" y="14" width="300" height="586" fill="url(#wall)"/>
+    <rect x="190" y="26" width="100" height="22" rx="11" fill="#0c0c10" transform="translate(50,0)"/>
+    <text x="290" y="86" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.8">Tuesday, March 3</text>
+    <text x="290" y="158" text-anchor="middle" font-size="74" font-weight="200" fill="#ffffff">3:12</text>
+
+    <!-- notification cards -->
+    <g>
+      <rect x="160" y="192" width="260" height="84" rx="16" fill="#ffffff" opacity="0.17"/>
+      <rect x="174" y="206" width="30" height="30" rx="7" fill="#06ac38"/>
+      <text x="189" y="227" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">P</text>
+      <text x="214" y="216" font-size="11" fill="#ffffff" opacity="0.65" letter-spacing="1">PAGERDUTY &#183; NOW</text>
+      <text x="214" y="236" font-size="15" font-weight="700" fill="#ffffff">SEV-1 update</text>
+      <text x="214" y="254" font-size="13.5" fill="#ffffff" opacity="0.85">now affecting 14 services</text>
+      <text x="214" y="270" font-size="13.5" fill="#ffffff" opacity="0.85">(none of them yours)</text>
+    </g>
+    <g>
+      <rect x="160" y="288" width="260" height="84" rx="16" fill="#ffffff" opacity="0.17"/>
+      <rect x="174" y="302" width="30" height="30" rx="7" fill="#611f69"/>
+      <text x="189" y="323" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">S</text>
+      <text x="214" y="312" font-size="11" fill="#ffffff" opacity="0.65" letter-spacing="1">SLACK &#183; NOW</text>
+      <text x="214" y="332" font-size="15" font-weight="700" fill="#ffffff">#inc-4412</text>
+      <text x="214" y="350" font-size="13.5" fill="#ffffff" opacity="0.85">@channel anyone from</text>
+      <text x="214" y="366" font-size="13.5" fill="#ffffff" opacity="0.85">payments awake?</text>
+    </g>
+
+    <circle cx="200" cy="556" r="22" fill="#ffffff" opacity="0.14"/>
+    <rect x="196" y="546" width="8" height="14" rx="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="200" cy="564" r="2.5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="380" cy="556" r="22" fill="#ffffff" opacity="0.14"/>
+    <circle cx="380" cy="556" r="8" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/>
+  </g>
+  <rect x="140" y="14" width="300" height="586" rx="40" fill="none" stroke="#1c1c22" stroke-width="7"/>
+
+  <!-- RIGHT PHONE: account per service -->
+  <g clip-path="url(#phoneR)">
+    <rect x="560" y="14" width="300" height="586" fill="url(#wall)"/>
+    <rect x="660" y="26" width="100" height="22" rx="11" fill="#0c0c10"/>
+    <text x="710" y="86" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.8">Tuesday, March 3</text>
+    <text x="710" y="158" text-anchor="middle" font-size="74" font-weight="200" fill="#ffffff">3:12</text>
+
+    <g stroke="#ffffff" fill="#ffffff" opacity="0.7">
+      <path d="M 696 318 Q 695 299 710 297 Q 725 299 724 318 L 728 324 L 692 324 Z" stroke="none"/>
+      <circle cx="710" cy="294" r="2.5" stroke="none"/>
+      <circle cx="710" cy="330" r="3.5" stroke="none"/>
+      <line x1="691" y1="295" x2="729" y2="335" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <text x="710" y="368" text-anchor="middle" font-size="17" fill="#ffffff" opacity="0.65">No Notifications</text>
+
+    <circle cx="620" cy="556" r="22" fill="#ffffff" opacity="0.14"/>
+    <rect x="616" y="546" width="8" height="14" rx="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="620" cy="564" r="2.5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="800" cy="556" r="22" fill="#ffffff" opacity="0.14"/>
+    <circle cx="800" cy="556" r="8" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/>
+  </g>
+  <rect x="560" y="14" width="300" height="586" rx="40" fill="none" stroke="#1c1c22" stroke-width="7"/>
+
+  <text x="290" y="642" text-anchor="middle" font-size="18" font-weight="700" fill="#4257c0">the shared cluster</text>
+  <text x="710" y="642" text-anchor="middle" font-size="18" font-weight="700" fill="#c07310">an account per service</text>
+</svg>

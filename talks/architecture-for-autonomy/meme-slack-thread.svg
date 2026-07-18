@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1000 736" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <!-- Fake Slack: the no-tickets argument as a #platform-requests thread. -->
+  <defs>
+    <clipPath id="win"><rect width="1000" height="736" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#win)">
+    <rect width="1000" height="736" fill="#ffffff"/>
+
+    <!-- sidebar -->
+    <rect x="0" y="0" width="192" height="736" fill="#3f0e40"/>
+    <text x="16" y="38" font-size="18" font-weight="800" fill="#ffffff">acme corp &#9662;</text>
+    <line x1="0" y1="54" x2="192" y2="54" stroke="#5d3a5e" stroke-width="1"/>
+    <text x="16" y="86" font-size="15" fill="#bcabbc">#  general</text>
+    <text x="16" y="114" font-size="15" fill="#bcabbc">#  incidents</text>
+    <text x="16" y="142" font-size="15" fill="#bcabbc">#  random</text>
+    <rect x="8" y="156" width="176" height="30" rx="6" fill="#1164a3"/>
+    <text x="16" y="177" font-size="15" font-weight="700" fill="#ffffff">#  platform-requests</text>
+    <text x="16" y="214" font-size="15" fill="#bcabbc">#  team-payments</text>
+    <text x="16" y="242" font-size="15" fill="#bcabbc">#  team-reports</text>
+    <text x="16" y="282" font-size="15" fill="#9c8a9c">+  Add channels</text>
+
+    <!-- channel header -->
+    <text x="216" y="40" font-size="20" font-weight="800" fill="#1d1c1d">#platform-requests</text>
+    <text x="216" y="64" font-size="14" fill="#616061">Infra requests &#8594; tickets only, please &#183; current SLA: 5 business days</text>
+    <line x1="192" y1="80" x2="1000" y2="80" stroke="#e2e2e2" stroke-width="1.5"/>
+
+    <!-- msg 1: maya -->
+    <rect x="216" y="106" width="40" height="40" rx="8" fill="#e8912d"/>
+    <text x="236" y="132" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">MK</text>
+    <text x="268" y="122" font-size="16" font-weight="800" fill="#1d1c1d">maya.k</text>
+    <text x="336" y="122" font-size="13" fill="#616061">9:03 AM</text>
+    <text x="268" y="148" font-size="17" fill="#1d1c1d">hey! we need <tspan font-family="ui-monospace, Menlo, monospace" font-size="15.5" fill="#e01e5a">payments.company.com</tspan> + a TLS cert for the new payments service</text>
+    <text x="268" y="174" font-size="17" fill="#1d1c1d">filed a ticket: PLAT-4132 &#128591;</text>
+    <rect x="268" y="188" width="56" height="26" rx="13" fill="#ffffff" stroke="#d0d0d0" stroke-width="1.5"/>
+    <text x="296" y="206" text-anchor="middle" font-size="14" fill="#1d1c1d">&#128591; 2</text>
+
+    <!-- msg 2: platform-bot -->
+    <rect x="216" y="242" width="40" height="40" rx="8" fill="#4a154b"/>
+    <text x="236" y="268" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">PB</text>
+    <text x="268" y="258" font-size="16" font-weight="800" fill="#1d1c1d">platform-bot</text>
+    <rect x="376" y="245" width="36" height="17" rx="3" fill="#e0e0e0"/>
+    <text x="394" y="258" text-anchor="middle" font-size="10.5" font-weight="700" fill="#616061">APP</text>
+    <text x="422" y="258" font-size="13" fill="#616061">9:03 AM</text>
+    <text x="268" y="284" font-size="17" fill="#1d1c1d">thanks <tspan fill="#1264a3" font-weight="600">@maya.k</tspan>! PLAT-4132 registered &#9989;</text>
+    <text x="268" y="310" font-size="17" fill="#1d1c1d">you are number <tspan font-weight="800">47</tspan> in the queue &#183; current SLA: <tspan font-weight="800">3&#8211;5 weeks</tspan></text>
+    <rect x="268" y="324" width="56" height="26" rx="13" fill="#ffffff" stroke="#d0d0d0" stroke-width="1.5"/>
+    <text x="296" y="342" text-anchor="middle" font-size="14" fill="#1d1c1d">&#128128; 4</text>
+    <rect x="332" y="324" width="56" height="26" rx="13" fill="#ffffff" stroke="#d0d0d0" stroke-width="1.5"/>
+    <text x="360" y="342" text-anchor="middle" font-size="14" fill="#1d1c1d">&#128557; 3</text>
+
+    <!-- msg 3: maya ships it -->
+    <rect x="216" y="378" width="40" height="40" rx="8" fill="#e8912d"/>
+    <text x="236" y="404" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">MK</text>
+    <text x="268" y="394" font-size="16" font-weight="800" fill="#1d1c1d">maya.k</text>
+    <text x="336" y="394" font-size="13" fill="#616061">9:41 AM</text>
+    <text x="268" y="420" font-size="17" fill="#1d1c1d">update: never mind &#8212; we shipped it ourselves &#127881;</text>
+    <!-- github unfurl -->
+    <rect x="268" y="434" width="4" height="80" rx="2" fill="#d0d0d0"/>
+    <text x="286" y="458" font-size="16" font-weight="700" fill="#1264a3">company/payments #212 &#8212; payments.company.com: zone, cert, api alias</text>
+    <rect x="286" y="470" width="66" height="23" rx="12" fill="#8250df"/>
+    <text x="319" y="486" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Merged</text>
+    <text x="362" y="486" font-size="14" fill="#616061"><tspan fill="#2da44e" font-weight="700">+41 &#8722;0</tspan> &#183; all checks passed &#10003; &#183; 1 approval</text>
+    <rect x="268" y="526" width="56" height="26" rx="13" fill="#e8f5fa" stroke="#1d9bd1" stroke-width="1.5"/>
+    <text x="296" y="544" text-anchor="middle" font-size="14" fill="#1d1c1d">&#127881; 7</text>
+    <rect x="332" y="526" width="56" height="26" rx="13" fill="#ffffff" stroke="#d0d0d0" stroke-width="1.5"/>
+    <text x="360" y="544" text-anchor="middle" font-size="14" fill="#1d1c1d">&#9989; 3</text>
+
+    <!-- msg 4: dmitri -->
+    <rect x="216" y="572" width="40" height="40" rx="8" fill="#2eb67d"/>
+    <text x="236" y="598" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">DV</text>
+    <text x="268" y="588" font-size="16" font-weight="800" fill="#1d1c1d">dmitri.v</text>
+    <text x="338" y="588" font-size="13" fill="#616061">9:44 AM</text>
+    <text x="268" y="614" font-size="17" fill="#1d1c1d">wait. you can just&#8230; do that?</text>
+
+    <!-- msg 5: maya -->
+    <rect x="216" y="634" width="40" height="40" rx="8" fill="#e8912d"/>
+    <text x="236" y="660" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">MK</text>
+    <text x="268" y="650" font-size="16" font-weight="800" fill="#1d1c1d">maya.k</text>
+    <text x="336" y="650" font-size="13" fill="#616061">9:45 AM</text>
+    <text x="268" y="674" font-size="17" fill="#1d1c1d">it's our account &#175;\_(&#12484;)_/&#175;</text>
+    <rect x="268" y="688" width="60" height="26" rx="13" fill="#e8f5fa" stroke="#1d9bd1" stroke-width="1.5"/>
+    <text x="298" y="706" text-anchor="middle" font-size="14" fill="#1d1c1d">&#129335; 12</text>
+  </g>
+  <rect x="1" y="1" width="998" height="734" rx="12" fill="none" stroke="#c9c9c9" stroke-width="2"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <!-- The definitional slide's examples, restated as a tier list. Tiles uniform orange; the ROW ranks. Compact 5x80 form for sharing the slide. -->
+  <defs>
+    <clipPath id="board"><rect width="1000" height="400" rx="10"/></clipPath>
+  </defs>
+  <g clip-path="url(#board)">
+    <rect width="1000" height="400" fill="#1a1a17"/>
+
+    <!-- tier label cells -->
+    <rect x="0" y="0"   width="112" height="80" fill="#ff7f7f"/>
+    <rect x="0" y="80"  width="112" height="80" fill="#ffbf7f"/>
+    <rect x="0" y="160" width="112" height="80" fill="#ffdf7f"/>
+    <rect x="0" y="240" width="112" height="80" fill="#feff7f"/>
+    <rect x="0" y="320" width="112" height="80" fill="#9f9f9f"/>
+    <g font-size="40" font-weight="800" fill="#1c1c1c" text-anchor="middle">
+      <text x="56" y="53">S</text>
+      <text x="56" y="133">A</text>
+      <text x="56" y="213">B</text>
+      <text x="56" y="293">C</text>
+      <text x="56" y="373">F</text>
+    </g>
+
+    <!-- row separators -->
+    <g stroke="#000000" stroke-width="3">
+      <line x1="0" y1="80"  x2="1000" y2="80"/>
+      <line x1="0" y1="160" x2="1000" y2="160"/>
+      <line x1="0" y1="240" x2="1000" y2="240"/>
+      <line x1="0" y1="320" x2="1000" y2="320"/>
+    </g>
+    <line x1="112" y1="0" x2="112" y2="400" stroke="#000000" stroke-width="3"/>
+
+    <!-- S row -->
+    <g>
+      <rect x="132" y="14" width="100" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="244" y="14" width="240" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="496" y="14" width="66"  height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="574" y="14" width="156" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="742" y="14" width="52"  height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="806" y="14" width="150" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <g font-size="20" font-weight="700" fill="#a35c00" text-anchor="middle">
+        <text x="182" y="47">Lambda</text>
+        <text x="364" y="47">DynamoDB on-demand</text>
+        <text x="529" y="47">SQS</text>
+        <text x="652" y="47">EventBridge</text>
+        <text x="768" y="47">S3</text>
+        <text x="881" y="47">API Gateway</text>
+      </g>
+    </g>
+
+    <!-- A row -->
+    <g>
+      <rect x="132" y="94" width="70"  height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="214" y="94" width="166" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <g font-size="20" font-weight="700" fill="#a35c00" text-anchor="middle">
+        <text x="167" y="127">SNS</text>
+        <text x="297" y="127">Step Functions</text>
+      </g>
+    </g>
+
+    <!-- B row: intentionally empty -->
+
+    <!-- C row -->
+    <g>
+      <rect x="132" y="254" width="146" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="290" y="254" width="148" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <g font-size="20" font-weight="700" fill="#a35c00" text-anchor="middle">
+        <text x="205" y="287">App Runner</text>
+        <text x="364" y="287">ECS/Fargate</text>
+      </g>
+      <text x="460" y="286" font-size="18" font-style="italic" fill="#9a9a9a">a lifecycle you own and size</text>
+    </g>
+
+    <!-- F row -->
+    <g>
+      <rect x="132" y="334" width="204" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <rect x="348" y="334" width="262" height="52" rx="6" fill="#fdf0dd" stroke="#de7f11" stroke-width="2"/>
+      <g font-size="20" font-weight="700" fill="#a35c00" text-anchor="middle">
+        <text x="234" y="367">Aurora &#8220;Serverless&#8221;</text>
+        <text x="479" y="367">OpenSearch &#8220;Serverless&#8221;</text>
+      </g>
+      <text x="632" y="366" font-size="18" font-style="italic" fill="#c9c9c9">the quotes are load-bearing</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="998" height="398" rx="10" fill="none" stroke="#2b2b33" stroke-width="2"/>
+</svg>

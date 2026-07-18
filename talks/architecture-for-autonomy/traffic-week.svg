@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c07310"/>
+    </marker>
+    <marker id="bluehead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4257c0"/>
+    </marker>
+  </defs>
+
+  <!-- what containers pay for: autoscaled capacity that never drops below the warm floor -->
+  <path d="M 40,360
+           L 54,360 C 68,360 73,283 100,283 C 127,283 132,360 146,360
+           L 154,360 C 168,360 173,233 200,233 C 227,233 232,360 246,360
+           L 254,360 C 268,360 273,293 300,293 C 327,293 332,360 346,360
+           L 354,360 C 368,360 373,113 400,113 C 427,113 432,360 446,360
+           L 454,360 C 468,360 473,313 500,313 C 527,313 532,360 546,360
+           L 760,360 L 760,440 L 40,440 Z"
+        fill="#5a6ed6" opacity="0.16"/>
+
+  <!-- what serverless pays for: the area under the actual work -->
+  <path d="M 40,440
+           L 60,440 C 78,440 78,295 100,295 C 122,295 122,440 140,440
+           L 160,440 C 178,440 178,245 200,245 C 222,245 222,440 240,440
+           L 260,440 C 278,440 278,305 300,305 C 322,305 322,440 340,440
+           L 360,440 C 378,440 378,125 400,125 C 422,125 422,440 440,440
+           L 460,440 C 478,440 478,325 500,325 C 522,325 522,440 540,440
+           L 560,440 C 578,440 578,420 600,420 C 622,420 622,440 640,440
+           L 660,440 C 678,440 678,423 700,423 C 722,423 722,440 740,440
+           L 760,440 Z"
+        fill="#ed9122" opacity="0.9"/>
+
+  <!-- baseline -->
+  <line x1="40" y1="440" x2="760" y2="440" stroke="#5b6472" stroke-width="2.5"/>
+  <g stroke="#5b6472" stroke-width="2">
+    <line x1="50" y1="440" x2="50" y2="448"/>
+    <line x1="150" y1="440" x2="150" y2="448"/>
+    <line x1="250" y1="440" x2="250" y2="448"/>
+    <line x1="350" y1="440" x2="350" y2="448"/>
+    <line x1="450" y1="440" x2="450" y2="448"/>
+    <line x1="550" y1="440" x2="550" y2="448"/>
+    <line x1="650" y1="440" x2="650" y2="448"/>
+    <line x1="750" y1="440" x2="750" y2="448"/>
+  </g>
+
+  <!-- traffic curve -->
+  <path d="M 40,440
+           L 60,440 C 78,440 78,295 100,295 C 122,295 122,440 140,440
+           L 160,440 C 178,440 178,245 200,245 C 222,245 222,440 240,440
+           L 260,440 C 278,440 278,305 300,305 C 322,305 322,440 340,440
+           L 360,440 C 378,440 378,125 400,125 C 422,125 422,440 440,440
+           L 460,440 C 478,440 478,325 500,325 C 522,325 522,440 540,440
+           L 560,440 C 578,440 578,420 600,420 C 622,420 622,440 640,440
+           L 660,440 C 678,440 678,423 700,423 C 722,423 722,440 740,440
+           L 760,440"
+        fill="none" stroke="#de7f11" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- capacity curve -->
+  <path d="M 40,360
+           L 54,360 C 68,360 73,283 100,283 C 127,283 132,360 146,360
+           L 154,360 C 168,360 173,233 200,233 C 227,233 232,360 246,360
+           L 254,360 C 268,360 273,293 300,293 C 327,293 332,360 346,360
+           L 354,360 C 368,360 373,113 400,113 C 427,113 432,360 446,360
+           L 454,360 C 468,360 473,313 500,313 C 527,313 532,360 546,360
+           L 760,360"
+        fill="none" stroke="#4257c0" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- day labels -->
+  <g font-size="19" font-weight="600" fill="#55555f" text-anchor="middle">
+    <text x="100" y="476">MON</text>
+    <text x="200" y="476">TUE</text>
+    <text x="300" y="476">WED</text>
+    <text x="400" y="476">THU</text>
+    <text x="500" y="476">FRI</text>
+    <text x="600" y="476">SAT</text>
+    <text x="700" y="476">SUN</text>
+  </g>
+
+  <!-- paid-for labels -->
+  <g font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0.5">
+    <text x="135" y="152" fill="#c07310">SERVERLESS PAYS</text>
+    <text x="135" y="180" fill="#c07310">ONLY FOR THIS</text>
+    <text x="655" y="245" fill="#4257c0">CONTAINERS PAY</text>
+    <text x="655" y="273" fill="#4257c0">FOR ALL OF THIS</text>
+  </g>
+  <path d="M 133,196 Q 118,255 105,320" fill="none" stroke="#c07310" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 655,288 L 655,372" fill="none" stroke="#4257c0" stroke-width="3" marker-end="url(#bluehead)"/>
+</svg>

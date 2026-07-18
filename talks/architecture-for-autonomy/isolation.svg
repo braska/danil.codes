@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="redhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e11d1d"/>
+    </marker>
+  </defs>
+
+  <!-- LEFT: one shared cluster, namespaces held apart by policy -->
+  <text x="240" y="20" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b33" letter-spacing="0.5">K8S: ONE SHARED CLUSTER</text>
+  <rect x="20" y="32" width="440" height="158" rx="10" fill="#4257c0"/>
+  <line x1="166" y1="32" x2="166" y2="190" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <line x1="313" y1="32" x2="313" y2="190" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <g font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="93" y="68">PAYMENTS</text>
+    <text x="240" y="68">BILLING</text>
+    <text x="386" y="68">REPORTS</text>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <rect x="69" y="100" width="20" height="20" rx="3"/>
+    <rect x="97" y="124" width="20" height="20" rx="3"/>
+    <rect x="216" y="100" width="20" height="20" rx="3"/>
+    <rect x="244" y="124" width="20" height="20" rx="3"/>
+    <rect x="362" y="100" width="20" height="20" rx="3"/>
+    <rect x="390" y="124" width="20" height="20" rx="3"/>
+  </g>
+  <!-- the machinery that holds the dashed lines up -->
+  <path d="M 205,214 L 172,195" fill="none" stroke="#e11d1d" stroke-width="2.5" marker-end="url(#redhead)"/>
+  <path d="M 275,214 L 308,195" fill="none" stroke="#e11d1d" stroke-width="2.5" marker-end="url(#redhead)"/>
+  <text x="240" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="#e11d1d">NetworkPolicy · ResourceQuota · admission / OPA</text>
+
+  <!-- RIGHT: same services, separate accounts, nothing to annotate -->
+  <text x="760" y="20" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b33" letter-spacing="0.5">SERVERLESS: ONE ACCOUNT PER SERVICE</text>
+  <g>
+    <rect x="530" y="32" width="140" height="158" rx="10" fill="#fdf0dd" stroke="#de7f11" stroke-width="4"/>
+    <rect x="690" y="32" width="140" height="158" rx="10" fill="#fdf0dd" stroke="#de7f11" stroke-width="4"/>
+    <rect x="850" y="32" width="140" height="158" rx="10" fill="#fdf0dd" stroke="#de7f11" stroke-width="4"/>
+  </g>
+  <g font-size="12" font-weight="600" fill="#c07310" text-anchor="middle" letter-spacing="0.5">
+    <text x="600" y="60">AWS ACCOUNT</text>
+    <text x="760" y="60">AWS ACCOUNT</text>
+    <text x="920" y="60">AWS ACCOUNT</text>
+  </g>
+  <g font-size="16" font-weight="700" fill="#a35c00" text-anchor="middle">
+    <text x="600" y="84">PAYMENTS</text>
+    <text x="760" y="84">BILLING</text>
+    <text x="920" y="84">REPORTS</text>
+  </g>
+  <g fill="none" stroke="#de7f11" stroke-width="2" opacity="0.7">
+    <rect x="576" y="105" width="20" height="20" rx="3"/>
+    <rect x="604" y="129" width="20" height="20" rx="3"/>
+    <rect x="736" y="105" width="20" height="20" rx="3"/>
+    <rect x="764" y="129" width="20" height="20" rx="3"/>
+    <rect x="896" y="105" width="20" height="20" rx="3"/>
+    <rect x="924" y="129" width="20" height="20" rx="3"/>
+  </g>
+</svg>
